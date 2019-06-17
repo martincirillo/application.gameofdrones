@@ -1,0 +1,20 @@
+<div *ngIf="!!isLoading" godSpinner></div>
+
+<div *ngIf="!isLoading">
+  <h4>Score</h4>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Round</th>
+        <th scope="col">Winner</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let round of game.rounds">
+        <th scope="row">{{ round.number }}</th>
+        <td>{{ getRoundWinner(round) }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

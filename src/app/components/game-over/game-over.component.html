@@ -1,0 +1,22 @@
+<div *ngIf="!!isLoading" godSpinner></div>
+
+<div *ngIf="!isLoading">
+  <h2>We have a WINNER!!</h2>
+
+  <h3>{{ winner.userName }} is the new EMPEROR!</h3>
+
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <app-game-statistics [(gameId)]='gameId'></app-game-statistics>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="buttons">
+        <input type="button" class="btn btn-primary" value="Play again" (click)="restart()" />
+      </div>
+    </div>
+  </div>
+</div>

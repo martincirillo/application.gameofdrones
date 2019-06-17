@@ -1,0 +1,13 @@
+<div *ngIf="!!isLoading" godSpinner></div>
+
+<div *ngIf="!isLoading">
+  <h2>And the winner of the round is... {{ winner.userName }}!!</h2>
+  
+  <div class="row">
+    <div class="col-md-12">
+      <div class="buttons">
+        <input type="button" class="btn btn-primary" value="Play next round" (click)="nextRound()" />
+      </div>
+    </div>
+  </div>
+</div>
