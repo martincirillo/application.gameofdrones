@@ -1,0 +1,64 @@
+<div *ngIf="!!isLoading" godSpinner></div>
+
+<div *ngIf="!isLoading">
+  <h2>Round {{ round.number }}</h2>
+
+  <div class="row">
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label>Player: {{ user1.userName }}</label>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="form-group">
+            <a>
+              <i class="fa fa-hand-rock-o" (click)="changeOption(user1.id, 2)"></i>
+            </a>
+            <a>
+              <i class="fa fa-hand-paper-o" (click)="changeOption(user1.id, 1)"></i>
+            </a>
+            <a>
+              <i class="fa fa-hand-scissors-o" (click)="changeOption(user1.id, 3)"></i>
+            </a>
+            <i *ngIf="round.user1Choise != undefined && round.user1Choise != null" class="fa fa-check-circle"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label>Player: {{ user2.userName }}</label>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="form-group">
+            <a>
+              <i class="fa fa-hand-rock-o" (click)="changeOption(user2.id, 2)"></i>
+            </a>
+            <a>
+              <i class="fa fa-hand-paper-o" (click)="changeOption(user2.id, 1)"></i>
+            </a>
+            <a>
+              <i class="fa fa-hand-scissors-o" (click)="changeOption(user2.id, 3)"></i>
+            </a>
+            <i *ngIf="round.user2Choise != undefined && round.user2Choise != null" class="fa fa-check-circle"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="buttons">
+            <input type="button" class="btn btn-primary" value="Verify results" (click)="verifyResult()" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <app-game-statistics [(gameId)]='round.gameId' [(currentRoundId)]='round.id'></app-game-statistics>
+    </div>
+  </div>
+</div>

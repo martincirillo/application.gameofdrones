@@ -1,0 +1,16 @@
+i.fa{
+    font-size: 50pt;
+    color: 	#015697;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+i.fa-check-circle{
+    font-size: 20pt;
+    color: darkgreen;
+}
+
+label{
+    font-size: 15pt;
+    padding: 15px 0;
+}
