@@ -1,0 +1,23 @@
+.error_page {
+    background: #e0e0e0;
+    height: 100vh;
+}
+
+.col-lg-6.col-lg-offset-3 {
+    background: #fff;
+    box-shadow: 0 2px 4px 1px #B8B8B8;
+    margin: auto;
+    padding: 20px 30px 70px 30px;
+    border-radius: 3px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #152c90;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 800;
+}

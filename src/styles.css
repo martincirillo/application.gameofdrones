@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+
+.form-group {
+    margin: 10px 0;
+}
+
+.form-group label{
+    color: #152c90;
+    font-family: Lato;
+    font-size: 12pt;
+    font-weight: bold;
+    margin-bottom: -3px;
+}
+
+.form-control-static {
+    margin-bottom: 15px;
+}
+
+.form-group.text-right label.control {
+    margin-right: 17px;
+    margin-top: 6px;
+}
+
+div.buttons{
+    margin-top: 20px;
+    text-align: center;
+}
+
+div.buttons input[type="button"]{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+h2{
+    margin: 30px 0;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    font-size: 16pt;
+    margin-bottom: 10px;
+    color: brown;
+}

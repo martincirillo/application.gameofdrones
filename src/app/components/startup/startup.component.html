@@ -1,0 +1,27 @@
+<h2>Enter player's names</h2>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="form-group">
+      <label>Player 1</label>
+      <input class="form-control" type="text" [(ngModel)]="userName1" />
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="form-group">
+      <label>Player 2</label>
+      <input class="form-control" type="text" [(ngModel)]="userName2" />
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="buttons">
+      <input type="button" class="btn btn-primary" value="Start" (click)="startGame()" />
+    </div>
+  </div>
+</div>
