@@ -27,7 +27,7 @@
     "core-js": "^2.5.4",
     "font-awesome": "^4.7.0",
     "guid-typescript": "^1.0.9",
-    "jquery": "^1.9.1",
+    "jquery": "^3.5.0",
     "mydatepicker": "^2.6.6",
     "ng-recaptcha": "^4.2.1",
     "ng2-tooltip-directive": "^2.1.9",
